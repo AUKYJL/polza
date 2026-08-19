@@ -8,9 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "db:schema": "node --env-file=.env.local --import tsx scripts/apply-schema.ts",
-    "load:companies": "node --env-file=.env.local --import tsx scripts/load-companies.ts",
-    "load:review": "node --env-file=.env.local --import tsx scripts/load-review.ts"
+    "db:schema": "node --env-file-if-exists=.env --import tsx scripts/apply-schema.ts",
+    "load:companies": "node --env-file-if-exists=.env --import tsx scripts/load-companies.ts",
+    "load:review": "node --env-file-if-exists=.env --import tsx scripts/load-review.ts"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
