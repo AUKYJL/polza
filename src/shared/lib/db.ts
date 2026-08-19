@@ -1,3 +1,5 @@
+import "server-only";
+
 import { Pool } from "pg";
 
 const globalForDb = globalThis as typeof globalThis & {
