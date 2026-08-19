@@ -1,7 +1,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { companyPageSchema, companySchema, type Company } from "./company-import-schema";
-import { getDbPool } from "../src/shared/lib/db";
+import { getDbPool } from "../src/shared/lib/db-pool";
 
 const BATCH_SIZE = 500;
 const PAGE_FILE_PATTERN = /^page_(\d+)\.json$/;

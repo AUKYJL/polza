@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { getDbPool } from "../src/shared/lib/db";
+import { getDbPool } from "../src/shared/lib/db-pool";
 
 async function main(): Promise<void> {
   const schemaPath = path.join(process.cwd(), "db", "schema.sql");
